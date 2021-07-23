@@ -24,4 +24,5 @@ export IBMCLOUD_IAM_API_ENDPOINT=$IC_API_IAM
 
 export IC_API_KEY=$(cat ~/.key)
 
+./terraform init
 ./terraform apply -state=terraform.tfstate -var-file=schematics.tfvars -auto-approve -no-color -lock=false
