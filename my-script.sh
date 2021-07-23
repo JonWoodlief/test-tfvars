@@ -1,5 +1,5 @@
-mkdir tmpdir
-cd tmpdir
+git clone https://github.com/bsvihovec/tf_cloudless_sleepy.git
+cd tf_cloudless_sleepy
 
 
 #wget https://releases.hashicorp.com/terraform/0.14.11/terraform_0.14.11_darwin_amd64.zip
@@ -8,7 +8,6 @@ cd tmpdir
 wget https://releases.hashicorp.com/terraform/0.14.11/terraform_0.14.11_linux_amd64.zip
 unzip terraform_0.14.11_linux_amd64.zip
 
-git clone https://github.com/bsvihovec/tf_cloudless_sleepy.git
 wget https://raw.githubusercontent.com/JonWoodlief/test-tfvars/main/schematics.tfvars
 
 #export IC_TOKEN=$(ibmcloud iam oauth-tokens --output JSON | jq -r ".iam_token" | tr -d '\n')
